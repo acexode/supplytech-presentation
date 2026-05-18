@@ -1,8 +1,15 @@
+"use client";
+
+import { usePathname } from "next/navigation";
+
 type SupplyTechLogoProps = {
   className?: string;
 };
 
 export default function SupplyTechLogo({ className }: SupplyTechLogoProps) {
+  const pathname = usePathname();
+  const wordmarkFill = pathname === "/" ? "white" : "currentColor";
+
   return (
     <div
       dir="ltr"
@@ -22,7 +29,7 @@ export default function SupplyTechLogo({ className }: SupplyTechLogoProps) {
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          fill="currentColor"
+          fill={wordmarkFill}
           viewBox="0 0 187 72"
           height="40"
         >
