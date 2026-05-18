@@ -356,7 +356,7 @@ export default function LetsBuildPage() {
                   <i className="fas fa-globe"></i>
                 </div>
                 <div className="contact-label">Website</div>
-                <div className="contact-value">https://supplytechsyg.com</div>
+                <div className="contact-value">supplytechsyg.com</div>
               </div>
               <div className="contact-card">
                 <div className="contact-icon">
